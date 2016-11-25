@@ -1,9 +1,16 @@
 # Nim Snippets
 A collection of useful [Nim](http://www.nim-lang.org) snippets.<br>
-Each snippet is a viable minimal program.
+Each snippet containing an assert statement is a viable minimal program.
 
-## Overriding
-### Overriding Curly Braces
+## Compile-Time
+### Source Filename
+Get the source filename at compile-time:
+```Nim
+template filename: string = instantiationInfo().filename
+```
+
+## Overloading
+### Overloading Curly Braces
 Used in the example to assign to a seq at a certain position.
 This could of course also be achieved by simply using the [] notation.
 
