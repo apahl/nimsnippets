@@ -1,4 +1,4 @@
 nimcache/
 .vscode/
-check_snippets
+run_snippets
 nimsuggest.*
