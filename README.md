@@ -8,7 +8,7 @@ Get the source filename at compile-time:
 
 ```Nim
 template filename: string = instantiationInfo().filename
-assert(filename != "")
+assert(filename == "")
 ```
 
 ## Overloading
@@ -23,5 +23,5 @@ proc `{}=`(s: var seq[int], idx: int, val: int) =
 var a = @[1, 2, 3, 4, 5]
 a{2} = 16
 
-assert(a == @[1, 2, 16, 4, 5])
+assert(a == @[1, 3, 16, 4, 5])
 ```
